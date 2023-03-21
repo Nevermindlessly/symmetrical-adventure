@@ -25,6 +25,10 @@ header {
 	justify-content: space-between;
 }
 
+#avatar {
+	max-height: 120px;
+}
+
 nav ul {
 	list-style: none;
 	margin: 0;
@@ -86,4 +90,40 @@ section h2 {
 	margin: 10px 0 0 0;
 }
 
-/*
+@media screen and (max-width: 768px) {
+	.header-content {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	#avatar {
+		margin-top: 20px;
+	}
+	
+	nav {
+		margin-top: 20px;
+	}
+	
+	nav li {
+		margin-right: 10px;
+	}
+	
+	nav a {
+		font-size: 16px;
+	}
+	
+	.work-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+	}
+	
+	.work-grid a {
+		height: 200px;
+	}
+	
+	.work-grid h3 {
+		font-size: 20px;
+	}
+}
